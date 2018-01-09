@@ -3,8 +3,8 @@ import moment from 'moment';
 
 const DEFAULT_SOURCE = 'The New York Times';
 
-const NewsItem = ({ news, onClick }) => (
-  <div className="news-item" onClick={onClick}>
+const NewsDetail = ({ news }) => (
+  <div className="news-item">
     <div className="source">
       <span className="source-content">{news.source || DEFAULT_SOURCE}</span>{' '}
     </div>
@@ -16,4 +16,4 @@ const NewsItem = ({ news, onClick }) => (
   </div>
 );
 
-export default NewsItem;
+export default NewsDetail;

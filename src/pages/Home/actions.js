@@ -17,3 +17,10 @@ export const moveToPage = page => dispatch => {
   });
   return dispatch(getNews(page));
 };
+
+export const selectNews = news => dispatch => {
+  dispatch({
+    type: 'SELECT_NEWS',
+    data: news,
+  });
+};

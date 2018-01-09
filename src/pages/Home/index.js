@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
 import Home from './Home.js';
-import { getNews, moveToPage } from './actions.js';
+import { getNews, moveToPage, selectNews } from './actions.js';
 
 const mapStateToProps = state => {
   return {
-    newsList: state.home.newsList,
-    currentPage: state.home.currentPage,
+    ...state.home,
   };
 };
 
 const mapDispatchToProps = {
   getNews,
   moveToPage,
+  selectNews,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
