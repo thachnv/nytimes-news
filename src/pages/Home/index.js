@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Home from './Home.js';
-import { getNews, moveToNextPage, moveToPreviousPage, moveToPage } from './actions.js';
+import { getNews, moveToPage } from './actions.js';
 
 const mapStateToProps = state => {
   return {
@@ -11,8 +11,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = {
   getNews,
-  moveToNextPage,
-  moveToPreviousPage,
   moveToPage,
 };
 
