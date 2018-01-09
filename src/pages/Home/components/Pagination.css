@@ -1,0 +1,16 @@
+.pagination {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .pagination .move-left-button,
+  .pagination .move-right-button {
+    margin-right: 5px;
+    cursor: pointer; }
+    .pagination .move-left-button:hover,
+    .pagination .move-right-button:hover {
+      color: #2e70ff; }
+  .pagination .page-item {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #fff; }
+    .pagination .page-item:hover, .pagination .page-item.active {
+      border: 1px solid #c8cdce; }
