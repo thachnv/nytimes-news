@@ -1,0 +1,15 @@
+.news-item {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #7a807b;
+  cursor: pointer;
+  transition: background-color 0.1s; }
+  .news-item:hover {
+    background-color: #f6f6f3; }
+  .news-item .public-date {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #7a807b; }
+  .news-item .snippet {
+    font-size: 13px; }

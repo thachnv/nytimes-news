@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './Home.css';
+
+import NewsItem from './components/NewsItem.js';
 
 class Home extends Component {
   componentWillMount() {
@@ -9,7 +12,7 @@ class Home extends Component {
       <div>
         {this.props.newsList &&
           this.props.newsList.map((news, index) => (
-            <div key={index}>{news.snippet}</div>
+            <NewsItem key={index} news={news} />
           ))}
       </div>
     );
