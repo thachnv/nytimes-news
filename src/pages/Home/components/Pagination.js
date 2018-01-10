@@ -55,7 +55,7 @@ export default class Pagination extends Component {
           onClick={this.moveToPreviousPage}
           className="fa fa-chevron-left move-left-button"
         />
-        {pages}
+        <span className="pages">{pages}</span>
         <i
           onClick={this.moveToNextPage}
           className="fa fa-chevron-right move-right-button"
