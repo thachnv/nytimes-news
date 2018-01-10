@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
-
 import './Modal.css';
 
 export default class Modal extends Component {
@@ -25,6 +23,8 @@ export default class Modal extends Component {
       () =>
         setTimeout(() => {
           this.modalRef.className += ' modal-show';
+          document.body.style.overflow = 'hidden';
+          document.body.style.paddingRight = '15px';
         }),
     );
   };
@@ -35,6 +35,8 @@ export default class Modal extends Component {
       this.setState({
         show: false,
       });
+      document.body.style.overflow = 'auto';
+      document.body.style.paddingRight = 0;
     }, 150);
   };
 

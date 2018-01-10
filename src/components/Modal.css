@@ -11,7 +11,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  overflow: auto; }
 
 .modal-background {
   position: fixed;
@@ -24,10 +25,14 @@
   z-index: 999; }
 
 .modal-content {
-  margin: 40px;
+  margin: 40px auto;
+  max-width: 600px;
   padding: 15px;
   background-color: #fff;
   border-radius: 6px;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
+
+.modal-open {
+  overflow: hidden; }

@@ -17,3 +17,17 @@
     font-size: 13px;
   }
 }
+
+.news-detail {
+  text-align: left;
+  .public-date {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #7a807b;
+  }
+  .snippet {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}

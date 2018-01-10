@@ -1,6 +1,7 @@
 .pagination {
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-right: 15px; }
   .pagination .move-left-button,
   .pagination .move-right-button {
     margin-right: 5px;
