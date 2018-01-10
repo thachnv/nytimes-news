@@ -10,8 +10,10 @@ import Pagination from './components/Pagination.js';
 
 class Home extends Component {
   static propTypes = {
-    getNews: PropTypes.func,
+    getNews: PropTypes.func.isRequired,
     selectNews: PropTypes.func,
+    loadingNews: PropTypes.bool,
+    newsList: PropTypes.array,
   };
 
   componentWillMount() {
@@ -30,6 +32,7 @@ class Home extends Component {
         {this.props.newsList &&
           this.props.newsList.map((news, index) => (
             <NewsItem
+              id="news-item-list"
               onClick={() => this.selectNewsItem(news)}
               key={index}
               news={news}
