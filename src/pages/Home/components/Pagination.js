@@ -34,6 +34,10 @@ export default class Pagination extends Component {
       i = currentPage - 5;
     }
 
+    if (currentPage + 5 > MAX_PAGE) {
+      i = MAX_PAGE - 10;
+    }
+
     for (let limit = i + MAX_PAGE_DISPLAY; i < limit; i++) {
       pages.push(
         <span
