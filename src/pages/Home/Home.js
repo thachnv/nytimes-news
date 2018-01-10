@@ -10,7 +10,7 @@ import Pagination from './components/Pagination.js';
 
 class Home extends Component {
   static propTypes = {
-    getNews: PropTypes.func.isRequired,
+    getNews: PropTypes.func,
     selectNews: PropTypes.func,
     loadingNews: PropTypes.bool,
     newsList: PropTypes.array,
