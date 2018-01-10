@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Home.css';
 
 import Modal from '../../components/Modal.js';
@@ -7,6 +8,11 @@ import NewsDetail from './components/NewsDetail.js';
 import Pagination from './components/Pagination.js';
 
 class Home extends Component {
+  static propTypes = {
+    getNews: PropTypes.func,
+    selectNews: PropTypes.func,
+  };
+
   componentWillMount() {
     this.props.getNews();
   }

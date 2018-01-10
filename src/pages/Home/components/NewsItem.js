@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 
 const DEFAULT_SOURCE = 'The New York Times';
@@ -15,5 +16,10 @@ const NewsItem = ({ news, onClick }) => (
     <div className="snippet">{news.snippet}</div>
   </div>
 );
+
+NewsItem.propTypes = {
+  news: PropTypes.object,
+  onClick: PropTypes.func,
+};
 
 export default NewsItem;

@@ -9,12 +9,6 @@ export default class Modal extends Component {
     super(args);
   }
 
-  componentWillReceiveProps(props) {
-    if (props.show) {
-      this.show();
-    }
-  }
-
   show = () => {
     this.setState(
       {

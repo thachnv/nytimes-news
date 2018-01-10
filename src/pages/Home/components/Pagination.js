@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropsTypes from 'prop-types';
 import classNames from 'classnames';
 import './Pagination.css';
 
@@ -8,6 +9,11 @@ const MAX_PAGE_DISPLAY = 10;
 const MAX_PAGE = 200;
 
 export default class Pagination extends Component {
+  static propTypes = {
+    currentPage: PropsTypes.number,
+    moveToPage: PropsTypes.func,
+  };
+
   moveToPreviousPage = () => {
     if (this.props.currentPage > 0) {
       this.props.moveToPage(this.props.currentPage - 1);

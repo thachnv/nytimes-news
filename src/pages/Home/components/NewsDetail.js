@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import moment from 'moment';
 
 const DEFAULT_SOURCE = 'The New York Times';
@@ -22,5 +23,9 @@ const NewsDetail = ({ news }) => (
     </div>
   </div>
 );
+
+NewsDetail.propTypes = {
+  news: PropTypes.object,
+};
 
 export default NewsDetail;
