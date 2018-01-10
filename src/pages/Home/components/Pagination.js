@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropsTypes from 'prop-types';
 import classNames from 'classnames';
-import './Pagination.css';
 
 const MAX_PAGE_DISPLAY = 10;
 
