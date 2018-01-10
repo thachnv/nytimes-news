@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-// import 'bootstrap/dist/css/bootstrap.css';
-import 'font-awesome/css/font-awesome.css';
 
+import 'font-awesome/css/font-awesome.css';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
