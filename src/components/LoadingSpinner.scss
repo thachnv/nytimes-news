@@ -1,0 +1,14 @@
+.loading-spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: .8;
+  .spinner {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+  }
+}

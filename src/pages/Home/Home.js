@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Home.css';
 
 import Modal from '../../components/Modal.js';
+import LoadingSpinner from '../../components/LoadingSpinner.js';
 import NewsItem from './components/NewsItem.js';
 import NewsDetail from './components/NewsDetail.js';
 import Pagination from './components/Pagination.js';
@@ -25,6 +26,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <LoadingSpinner show={this.props.loadingNews} />
         {this.props.newsList &&
           this.props.newsList.map((news, index) => (
             <NewsItem
@@ -33,7 +35,7 @@ class Home extends Component {
               news={news}
             />
           ))}
-        <Pagination {...this.props} />
+        {this.props.newsList && <Pagination {...this.props} />}
         <Modal ref={r => (this.detailModalRef = r)}>
           <NewsDetail news={this.props.selectedNews} />
         </Modal>

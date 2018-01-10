@@ -37,6 +37,7 @@ export default class Pagination extends Component {
     for (let limit = i + MAX_PAGE_DISPLAY; i < limit; i++) {
       pages.push(
         <span
+          key={i}
           className={classNames(
             'page-item',
             this.props.currentPage === i ? 'active' : null,

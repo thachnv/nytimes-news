@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
@@ -16,6 +16,7 @@ const NewsDetail = ({ news }) => (
     <div className="multimedia">
       {news.multimedia[0] && (
         <img
+          alt=""
           style={{ maxWidth: '100%' }}
           src={`http://www.nytimes.com/${news.multimedia[0].url}`}
         />

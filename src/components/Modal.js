@@ -5,9 +5,6 @@ export default class Modal extends Component {
   state = {
     show: false,
   };
-  constructor(args) {
-    super(args);
-  }
 
   show = () => {
     this.setState(
