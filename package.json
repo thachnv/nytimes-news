@@ -6,6 +6,7 @@
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "moment": "^2.20.1",
+    "node-sass-chokidar": "^0.0.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -23,7 +24,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "node-sass-chokidar": "^0.0.3"
-  }
+  "devDependencies": {}
 }
