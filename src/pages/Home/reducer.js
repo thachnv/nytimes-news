@@ -13,6 +13,8 @@ const reducer = (state = INIT_STATE, action) => {
       return state.set('loadingNews', true);
     case 'GET_NEWS_SUCCESS':
       return state.merge({ newsList: action.data, loadingNews: false });
+    case 'GET_NEWS_FAIL':
+      return state.set('loadingNews', false);
     case 'UPDATE_CURRENT_PAGE':
       return state.set('currentPage', action.data);
     case 'SELECT_NEWS':
